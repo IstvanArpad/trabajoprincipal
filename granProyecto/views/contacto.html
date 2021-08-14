@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Principal</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+        </ul>
+      </nav>
+
+      <h2>Contacto</h2>
+    </header>
+
+    <section>
+      <p>
+        ¿Te gustaria recibir nuestro newsletter con recetas, novedades y
+        ofertas?
+      </p>
+
+      <h3>Inscribite</h3>
+
+      <fieldset>
+        <legend>Formulario</legend>
+        <br />
+
+        <form action=""></form>
+
+        <label for="nuestroNombre">Nombre: </label> <br />
+        <input type="text" name="nuestroNombre" placeholder="Name" />
+
+        <br />
+        <br />
+
+        <label for="nuestroApellido">Apellido: </label> <br />
+        <input type="text" name="nuestroApellido" placeholder="Last Name" />
+
+        <br />
+        <br />
+
+        <label for="nuestroMail">Mail: </label> <br />
+        <input type="email" placeholder="Email" />
+
+        <br />
+        <br />
+
+        <label for="Contraseña">Password: </label> <br />
+        <input type="password" placeholder="Contraseña" />
+      </fieldset>
+
+      <br />
+      <br />
+
+      <!--Aca va el desplegable-->
+
+      <h3>¿Como calificarias tus conocimientos culinarios?</h3>
+
+      <select name="Profesion" id="">
+        <option value="GS">Gastronomico</option>
+        <option value="CAS">Casual</option>
+        <option value="AFI">Aficionado</option>
+      </select>
+
+      <br />
+      <br />
+      <p><strong> Identidad Sexual </strong></p>
+
+      <br />
+
+      <div>
+        Hombre
+        <input type="radio" name="sexo" value="Hombre" />
+      </div>
+      <br />
+      <div>
+        Mujer
+        <input type="radio" name="sexo" value="Mujer" />
+      </div>
+      <br />
+      <div>
+        Otro
+        <input type="radio" name="sexo" value="Otro" />
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <!--Checkbox-->
+
+    <div>
+      ¿Te gustaria tener tu propio emprendimiento?
+
+      <input type="checkbox" name="acepta" value="1" />
+    </div>
+
+    <!--Textarea-->
+
+    <textarea name="" id="" cols="50" rows="10"></textarea>
+
+    <!--botones-->
+
+    <input type="reset" value="Limpiar Formulario" />
+    <input type="submit" value="Enviar" />
+
+    <br />
+    <br />
+    <footer>Copyrights Camada 16655 2021 Arpad</footer>
+  </body>
+</html>

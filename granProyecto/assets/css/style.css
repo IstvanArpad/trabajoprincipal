@@ -1,0 +1,368 @@
+/* archivo */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* html */
+
+html {
+  font-size: 62, 5%;
+}
+
+/* body */
+
+body {
+  font-size: 1.6rem;
+  background-color: pink;
+  font-family: "Roboto", sans-serif;
+}
+
+/*header */
+
+li {
+  display: inline;
+}
+
+.headerindex {
+  font-size: 1rem;
+  padding: 0rem;
+}
+
+.headerindex__nav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.headerindex__nav a {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.headerindex__imagencarrousel {
+  background-image: url("/granProyecto/img/imagenes1920x1080/foodFountain.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: strech;
+  height: 350px;
+  padding-top: 5rem;
+}
+
+.main {
+  color: black;
+  padding: 2rem;
+}
+
+/* section*/
+
+sectionindex {
+  padding: 2rem;
+  text-align: left;
+}
+
+.section__titulo {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.section__subtitulo {
+  text-align: left;
+  margin: 0.5rem;
+  padding-left: 4rem;
+}
+
+.section__texto {
+  text-align: left;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.section__subtitulo2 {
+  text-align: left;
+  margin: 0.5rem;
+  padding-left: 4rem;
+}
+
+.section__texto2 {
+  text-align: left;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.section__texto2--bold {
+  font-weight: bold;
+}
+
+/*2da section del index*/
+
+.unoAlLadoDelOtro {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section__subtitulo3--italica {
+  text-align: center;
+  margin: 0.5rem;
+  padding-left: 4rem;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.primerIntentoAlineandoAlgo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section__texto3 {
+  padding: 1rem;
+}
+
+.cheeseAndWine {
+  padding: 1rem;
+  size: 5rem;
+}
+
+#pieDePagina {
+  text-align: right;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+#pieDePagina {
+  text-align: right;
+}
+
+#pieDePagina a {
+  color: cornsilk;
+}
+
+/* ACA EMPIEZA EL HTML DEL MENU */
+
+/*BODY*/
+
+#cuerpoDelMenu {
+  font-size: 1.6rem;
+  background-color: pink;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER*/
+
+.headMenu {
+  font-size: 1rem;
+  padding: 0rem;
+}
+
+.headMenu__nav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.headMenu__nav a {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.subTitMenu {
+  text-align: left;
+}
+
+/*MAIN DEL MENU*/
+
+.cuerpoDelMenu {
+  background-image: url("/granProyecto/img/FondosDePantalla/fondo6.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainDelMenu {
+  color: black;
+  padding-top: 3rem;
+  padding-left: 0.5rem;
+}
+
+.subTitMenu {
+  padding: 1rem;
+  color: #f2f2f2;
+}
+
+/*1er SECTION DEL MENU*/
+
+.sectMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.imagenEntradas {
+  display: inline-block;
+}
+
+.imagenEnsaladas {
+  display: inline-block;
+}
+
+/*2da SECTION DEL MENU*/
+
+.sectMenu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.imagenPastas {
+  display: inline-block;
+}
+
+.imagenCarnes {
+  display: inline-block;
+}
+
+.pDelMenu {
+  text-align: center;
+}
+
+/*Parrafos del Menu*/
+
+.pDelMenu {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/*TABLA ABAJO DEL MENU CON TODOS LOS PLATOS */
+
+#finalDeTabla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.tablaPrimera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 3px solid black;
+  border-collapse: inherit;
+}
+
+.prototipo {
+  color: rgb(228, 173, 54);
+  border: 3px solid black;
+}
+
+.entre {
+  border: 3px solid black;
+}
+.salad {
+  border: 3px solid black;
+}
+.harina {
+  border: 3px solid black;
+}
+.nerca {
+  border: 3px solid black;
+}
+
+/* ACA EMPIEZA EL HTML DEL STAFF*/
+
+/*BODY DEL STAFF*/
+
+#cuerpoDelStaff {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER DEL STAFF*/
+
+.headStaff {
+  font-size: 1rem;
+  padding: 0rem;
+}
+
+.headStaff__nav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.headStaff__nav a {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*MAIN DEL STAFF */
+
+.fotoDelStaff {
+  background-image: url("/granProyecto/img/Staff/kitchen1.jpg");
+  background-repeat: no-repeat;
+  background-size: content;
+  background-position: center;
+  height: 350px;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+#mainDelStaff {
+  background-color: rgb(240, 170, 170);
+}
+
+.sectionStaff {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+}
+
+.tituloStaff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pDelStaff {
+  display: flex;
+  padding: 1rem;
+}
