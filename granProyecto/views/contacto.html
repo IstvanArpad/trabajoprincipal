@@ -4,116 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactos</title>
+    <title>contacto_con_bootstrapt</title>
+    
+<!--Link Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Principal</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./menu.html">Menu</a></li>
-        </ul>
-      </nav>
 
-      <h2>Contacto</h2>
-    </header>
+  <!--BODY-->
 
-    <section>
-      <p>
-        ¿Te gustaria recibir nuestro newsletter con recetas, novedades y
-        ofertas?
-      </p>
+  <body class="vh-100 body-content text-light bg-dark">
 
-      <h3>Inscribite</h3>
 
-      <fieldset>
-        <legend>Formulario</legend>
-        <br />
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo3.png" alt="Imagen Logo" width="200" />
+        </a>
 
-        <form action=""></form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <label for="nuestroNombre">Nombre: </label> <br />
-        <input type="text" name="nuestroNombre" placeholder="Name" />
-
-        <br />
-        <br />
-
-        <label for="nuestroApellido">Apellido: </label> <br />
-        <input type="text" name="nuestroApellido" placeholder="Last Name" />
-
-        <br />
-        <br />
-
-        <label for="nuestroMail">Mail: </label> <br />
-        <input type="email" placeholder="Email" />
-
-        <br />
-        <br />
-
-        <label for="Contraseña">Password: </label> <br />
-        <input type="password" placeholder="Contraseña" />
-      </fieldset>
-
-      <br />
-      <br />
-
-      <!--Aca va el desplegable-->
-
-      <h3>¿Como calificarias tus conocimientos culinarios?</h3>
-
-      <select name="Profesion" id="">
-        <option value="GS">Gastronomico</option>
-        <option value="CAS">Casual</option>
-        <option value="AFI">Aficionado</option>
-      </select>
-
-      <br />
-      <br />
-      <p><strong> Identidad Sexual </strong></p>
-
-      <br />
-
-      <div>
-        Hombre
-        <input type="radio" name="sexo" value="Hombre" />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="/granProyecto/index.html">Inicio</a>
+              <li class="nav-item active"><a class="nav-link" href="/granProyecto/views/menu.html">Menu</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/granProyecto/views/nosotros.html">Nosotros</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/granProyecto/views/contacto.html">Contacto</a></li>
+            </li>
+          </ul>
+        </div>
       </div>
-      <br />
-      <div>
-        Mujer
-        <input type="radio" name="sexo" value="Mujer" />
-      </div>
-      <br />
-      <div>
-        Otro
-        <input type="radio" name="sexo" value="Otro" />
-      </div>
-    </section>
-    <br />
-    <br />
+    </nav>
+    <!--FIN NAVBAR-->
 
-    <!--Checkbox-->
+    <main>
 
-    <div>
-      ¿Te gustaria tener tu propio emprendimiento?
+      <!--Seccion1-->
 
-      <input type="checkbox" name="acepta" value="1" />
-    </div>
+      <form class="container mt-5 border roudned px-4 py-5">
+        <div class="row flex-row mb-4">
+          <div class="form-group col-sm-12">
+            <label for="nombre">Nombre</label>
+            <input class="form-control" type="text" id="nombre" name="nombre" />
+          </div>
+        </div>
+        <div class="row flex-row mb-4">
+          <div class="form-group col-sm-12">
+            <label for="email">E-MAIL</label>
+            <input class="form-control" type="email" id="email" name="email" />
+          </div>
+        </div>
+        <div class="row flex-row mb-4">
+          <div class="form-group col-sm-12">
+            <label for="password">Contraseña</label>
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+        </div>
+        <input class="form-control" type="submit" value="Enviar" />
+      </form>
+    </main>
 
-    <!--Textarea-->
+<!--Popper y Jquery-->
 
-    <textarea name="" id="" cols="50" rows="10"></textarea>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!--botones-->
+<!--Footer-->
 
-    <input type="reset" value="Limpiar Formulario" />
-    <input type="submit" value="Enviar" />
-
-    <br />
-    <br />
-    <footer>Copyrights Camada 16655 2021 Arpad</footer>
+<footer></footer>
   </body>
 </html>
