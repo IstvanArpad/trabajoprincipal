@@ -4,112 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>contacto_con_bootstrapt</title>
+    
+<!--Link Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
 
-  <body class="cuerpoDelMenu">
-    <header class="headMenu">
-      <div class="headMenu__nav">
-        <nav>
-          <ul>
-            <li><a href="../index.html">Principal</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+
+  <!--BODY-->
+
+  <body class="vh-100 body-content text-light bg-dark">
+
+
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/img/logo3.png" alt="Imagen Logo" width="200" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+              <li class="nav-item active"><a class="nav-link" href="/views/menu.html">Menu</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/views/nosotros.html">Nosotros</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/views/contacto.html">Contacto</a></li>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </nav>
+    <!--FIN NAVBAR-->
 
-    <main class="mainDelMenu">
-      <h2 class="subTitMenu">Menu</h2>
-
-      <section class="sectMenu">
-        <div class="imagenEntradas">
-          <a href="../partesMenu/entradas.html">
-            <img
-              src="../img/Fotos de links principales/entradas.jpg"
-              alt="imagen de Entradas"
-              width="500"
-              height="500"
-            />
-            <p class="pDelMenu">Entradas</p>
-          </a>
+  <!-- CAROUSEL-->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/imagenes1920x1080/burga.jpg" class="d-block w-100" alt="...">
         </div>
-
-        <div class="imagenEnsaladas">
-          <a href="../partesMenu/ensaldas.html">
-            <img
-              src="../img/Fotos de links principales/ensaladas.jpg"
-              alt="imagen de Ensaladas"
-              width="500"
-              height="500"
-            />
-            <p class="pDelMenu">Ensaladas</p>
-          </a>
+        <div class="carousel-item ">
+          <img src="/img/Entradas/mollejas1920.jpg" class="d-block w-100" alt="...">
         </div>
-      </section>
-
-      <section class="sectMenu2">
-        <div class="imagenPastas">
-          <a href="../partesMenu/pastas.html">
-            <img
-              src="../img/Fotos de links principales/PASTAS.jpg"
-              alt="imagen de pastas"
-              width="500"
-              height="500"
-            />
-            <p class="pDelMenu">Pastas</p>
-          </a>
+        <div class="carousel-item">
+          <img src="/img/Pastas/ravioles2.jpg" class="d-block w-100" alt="...">
         </div>
+      </div>
+  </div><!-- CAROUSEL-->
 
-        <div class="imagenCarnes">
-          <a href="../partesMenu/carnes.html">
-            <img
-              src="../img/Fotos de links principales/Carnes.jpg"
-              alt="imagen de carnes"
-              width="500"
-              height="500"
-            />
-            <p class="pDelMenu">Carnes</p>
-          </a>
-        </div>
-      </section>
+    <!--Seccion1-->
+    
+    <main>
 
-      <section id="finalDeTabla">
-        <table border="1" class="tablaPrimera">
-          <tr class="prototipo">
-            <th class="entre">Entradas</th>
-            <th class="salad">Ensaladas</th>
-            <th class="harina">Pastas</th>
-            <th class="nerca">Carnes</th>
-          </tr>
+      <!--Footer-->
+      
+      <footer id="pieDePagina">Copyrights Camada 16655 2021 Arpad</footer>
+          
 
-          <tr>
-            <td class="entre">Empanadas</td>
-            <td class="salad">Ens. de Queso Brie</td>
-            <td class="harina">Canelones</td>
-            <td class="nerca">Bife de Chorizo</td>
-          </tr>
+<!--Popper y Jquery-->
 
-          <tr>
-            <td class="entre">Langostinos Salteados</td>
-            <td class="salad">Ens. De Espinaca con Miel</td>
-            <td class="harina">Ñoquis de Espinaca</td>
-            <td class="nerca">Pechuga Rellena</td>
-          </tr>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-          <tr>
-            <td class="entre">Mollejas al Limon</td>
-            <td class="salad">Ens. Caesar</td>
-            <td class="harina">Ravioles de Calabaza</td>
-            <td class="nerca">Salmon Rosado</td>
-          </tr>
-        </table>
-      </section>
-    </main>
-
-    <footer id="pieDePagina">Copyrights Camada 16655 2021 Arpad</footer>
   </body>
 </html>

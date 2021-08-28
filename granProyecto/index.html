@@ -12,33 +12,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 <!--Link Bootstrap-->
-<!--
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
--->
-    
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet">
 
   </head>
 
   <body>
-    <header class="headerindex">
-      <div class="headerindex__nav">
-        <nav>
-          <ul>
-            <li><a href="./views/menu.html">Menu</a></li>
-            <li><a href="./views/nosotros.html">Nosotros</a></li>
-            <li><a href="./views/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="headerindex__imagencarrousel"></div>
-    </header>
+<!-- NAVBAR-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html">
+      <img src="/img/logo3.png" alt="Imagen Logo" width="200" />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+          <li class="nav-item active"><a class="nav-link" href="/views/menu.html">Menu</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/views/nosotros.html">Nosotros</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/views/contacto.html">Contacto</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--FIN NAVBAR-->
 
     <main class="main">
-      <!--aca quiero un carrusel de imagines-->
-      <!--Para que un carrusel de imagenes rote sola necesitaria implentar JAVA?-->
+
+<!--Imagen principal-->
+
+      <div class="headerindex__imagencarrousel"></div>
+
+<!--fin de imagen-->
+
+<!--primera parte-->
 
       <section class="sectionindex">
         <a href="#pieDePagina"">Ir al pie de pagina</a>
@@ -89,13 +109,17 @@
         </p>
       </section>
 
+<!--segunda parte-->
+
       <section .unoAlLadoDelOtro>
         <h3 class="section__subtitulo3--italica">
           "Que tu medicina sea tu alimento, y el alimento tu medicina."
         </h3>
-
-        <div class="primerIntentoAlineandoAlgo">
-          <p class="section__texto3">
+        
+        <div class="container-fluid">
+          
+          <div class="primerIntentoAlineandoAlgo">
+            <p class="section__texto3">
             En Al Alba creemos en el bienestar del cuerpo y la mente a través de
             una alimentación sana. Como dice el proverbio “somos lo que
             comemos”, por eso creemos firmemente que la materia que nutre
@@ -113,28 +137,31 @@
             bajo los estándares correspondientes de conservación de los
             productos.
           </p>
-          <div class="cheeseAndWine">
-            <img
-              src="./img/imagenes1920x1080/cheeseandwine.jpg"
-              alt="cheeseAndaWine"
-              height="500"
-              width="500"
-            />
-          </div>
         </div>
-      </section>
+
+        <div class="cheeseAndWine">
+          <img
+          src="./img/imagenes1920x1080/cheeseandwine.jpg"
+          alt="cheeseAndaWine"
+          height="500"
+          width="100%"
+          />
+        </div>
+      </div>
+    </section>
+      
     </main>
 
+    <!--Footer-->
+    
+        <footer id="pieDePagina">Copyrights Camada 16655 2021 Arpad</footer>
+        
 <!--Popper y Jquery-->
-<!--
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
--->
-<!--Footer-->
 
 
-    <footer id="pieDePagina">Copyrights Camada 16655 2021 Arpad</footer>
-    <!--tambien me gustaria saber como poner los simbolos de las redes sociales-->
   </body>
 </html>

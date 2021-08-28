@@ -1,26 +1,22 @@
 /* archivo */
-
 * {
   margin: 0;
   padding: 0;
 }
 
 /* html */
-
 html {
   font-size: 62, 5%;
 }
 
 /* body */
-
 body {
   font-size: 1.6rem;
-  background-color: rgb(219, 57, 84);
+  background-color: #db3954;
   font-family: "Roboto", sans-serif;
 }
 
 /*header */
-
 li {
   display: inline;
 }
@@ -66,7 +62,6 @@ li {
 }
 
 /* section*/
-
 sectionindex {
   padding: 2rem;
   text-align: left;
@@ -107,13 +102,15 @@ sectionindex {
 }
 
 /*2da section del index*/
-
 .unoAlLadoDelOtro {
   display: inline-block;
   margin: 0.5rem;
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section__subtitulo3--italica {
@@ -125,9 +122,16 @@ sectionindex {
 }
 
 .primerIntentoAlineandoAlgo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .section__texto3 {
@@ -135,31 +139,34 @@ sectionindex {
 }
 
 .cheeseAndWine {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   padding: 1rem;
   size: 5rem;
 }
 
 #pieDePagina {
-  justify-content: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   text-align: right;
   margin: 0.5rem;
   padding: 1rem;
 }
 
 /* ACA EMPIEZA EL HTML DEL MENU */
-
 /*BODY*/
-
 #cuerpoDelMenu {
   font-size: 1.6rem;
-  background-color: rgb(219, 57, 84);
+  background-color: #db3954;
   font-family: "Roboto", sans-serif;
 }
 
 /* HEADER*/
-
 .headMenu {
   font-size: 1rem;
   padding: 0rem;
@@ -191,7 +198,6 @@ sectionindex {
 }
 
 /*MAIN DEL MENU*/
-
 .cuerpoDelMenu {
   background-image: url("/img/FondosDePantalla/fondo6.jpg");
   background-attachment: fixed;
@@ -211,11 +217,17 @@ sectionindex {
 }
 
 /*1er SECTION DEL MENU*/
-
 .sectMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 2rem;
 }
 
@@ -228,11 +240,17 @@ sectionindex {
 }
 
 /*2da SECTION DEL MENU*/
-
 .sectMenu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 2rem;
 }
 
@@ -249,25 +267,35 @@ sectionindex {
 }
 
 /*Parrafos del Menu*/
-
 .pDelMenu {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
 }
 
 /*TABLA ABAJO DEL MENU CON TODOS LOS PLATOS */
-
 #finalDeTabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
 }
 
 .tablaPrimera {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   border: 3px solid black;
@@ -275,34 +303,34 @@ sectionindex {
 }
 
 .prototipo {
-  color: rgb(228, 173, 54);
+  color: #e4ad36;
   border: 3px solid black;
 }
 
 .entre {
   border: 3px solid black;
 }
+
 .salad {
   border: 3px solid black;
 }
+
 .harina {
   border: 3px solid black;
 }
+
 .nerca {
   border: 3px solid black;
 }
 
 /* ACA EMPIEZA EL HTML DEL STAFF*/
-
 /*BODY DEL STAFF*/
-
 #cuerpoDelStaff {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
 }
 
 /* HEADER DEL STAFF*/
-
 .headStaff {
   font-size: 1rem;
   padding: 0rem;
@@ -330,7 +358,6 @@ sectionindex {
 }
 
 /*MAIN DEL STAFF */
-
 .fotoDelStaff {
   background-image: url("/img/Staff/kitchen1.jpg");
   background-repeat: no-repeat;
@@ -342,22 +369,35 @@ sectionindex {
 }
 
 #mainDelStaff {
-  background-color: rgb(219, 57, 84);
+  background-color: #db3954;
 }
 
 .sectionStaff {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 3rem;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .tituloStaff {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pDelStaff {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 1rem;
 }
@@ -365,3 +405,4 @@ sectionindex {
 carousel-item {
   max-height: 300px;
 }
+/*# sourceMappingURL=styles.css.map */
